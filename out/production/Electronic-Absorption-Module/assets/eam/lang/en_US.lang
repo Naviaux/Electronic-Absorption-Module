@@ -1,0 +1,6 @@
+# Item localizations
+item.eam:metalBits.name=Metal Bits
+item.eam:stoneHammer.name=Stone Hammer
+
+# Other
+itemGroup.eam=Electronic Absorption Module
