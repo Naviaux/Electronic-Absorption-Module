@@ -6,8 +6,8 @@ import net.minecraft.item.ItemStack;
 
 public class RecipeRegistery {
 
-    public static void init() {
-        GameRegistry.addShapelessRecipe(new ItemStack(Items.iron_pickaxe), new ItemStack(ItemRegistery.metalBits), new ItemStack(ItemRegistery.stoneHammer));
-        GameRegistry.addShapelessRecipe(new ItemStack(ItemRegistery.metalBits), new ItemStack(ItemRegistery.stoneHammer), new ItemStack(Items.iron_ingot));
-    }
+	public static void init () {
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.iron_pickaxe), new ItemStack(ItemRegistery.metalBits), new ItemStack(ItemRegistery.stoneHammer));
+		GameRegistry.addShapelessRecipe(new ItemStack(ItemRegistery.metalBits), new ItemStack(ItemRegistery.stoneHammer), new ItemStack(Items.iron_ingot));
+	}
 }

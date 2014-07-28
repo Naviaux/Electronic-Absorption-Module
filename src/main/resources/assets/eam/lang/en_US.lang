@@ -1,6 +1,12 @@
-# Item localizations
+# Items
 item.eam:metalBits.name=Metal Bits
 item.eam:stoneHammer.name=Stone Hammer
+
+# Blocks
+tile.eam:casing.name=Shield Casing Object
+tile.eam:compressor.name=Shield Compressor Object
+tile.eam:extractor.name=Shield Extractor Object
+tile.eam:smelter.name=Shield Smelter Object
 
 # Other
 itemGroup.eam=Electronic Absorption Module

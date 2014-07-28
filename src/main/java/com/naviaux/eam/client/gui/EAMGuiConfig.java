@@ -9,9 +9,7 @@ import net.minecraftforge.common.config.Configuration;
 
 public class EAMGuiConfig extends GuiConfig {
 
-    public EAMGuiConfig (GuiScreen guiScreen) {
-        super(guiScreen,
-                new ConfigElement(ConfigurationHandler.configuration.getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(),
-                EAMInfo.MOD_ID, false, false, GuiConfig.getAbridgedConfigPath(ConfigurationHandler.configuration.toString()));
-    }
+	public EAMGuiConfig (GuiScreen guiScreen) {
+		super(guiScreen, new ConfigElement(ConfigurationHandler.configuration.getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(), EAMInfo.MOD_ID, false, false, GuiConfig.getAbridgedConfigPath(ConfigurationHandler.configuration.toString()));
+	}
 }

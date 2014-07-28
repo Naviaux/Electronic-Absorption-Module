@@ -8,26 +8,25 @@ import net.minecraftforge.common.config.Configuration;
 import java.io.File;
 
 public class ConfigurationHandler {
-    public static Configuration configuration;
-    public static boolean testValue = false;
-    public static void init (File configFile){
-        // create config file
-        if (configuration == null) {
-            configuration = new Configuration(configFile);
-            loadConfiguration();
-        }
-    }
+	public static Configuration configuration;
+	public static boolean testValue = false;
 
-    @SubscribeEvent
-    public void onConfigurationChangedEvent(ConfigChangedEvent event) {
-        if (event.modID.equalsIgnoreCase(EAMInfo.MOD_ID))
-            loadConfiguration();
-    }
+	public static void init (File configFile) {
+		// create config file
+		if (configuration == null) {
+			configuration = new Configuration(configFile);
+			loadConfiguration();
+		}
+	}
 
-    private static void loadConfiguration () {
-        testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is a config value");
+	@SubscribeEvent
+	public void onConfigurationChangedEvent (ConfigChangedEvent event) {
+		if (event.modID.equalsIgnoreCase(EAMInfo.MOD_ID)) loadConfiguration();
+	}
 
-        if (configuration.hasChanged())
-            configuration.save();
-    }
+	private static void loadConfiguration () {
+		testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is a config value");
+
+		if (configuration.hasChanged()) configuration.save();
+	}
 }
